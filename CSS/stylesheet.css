@@ -4,7 +4,7 @@
 /* All Pgs */
 
 *{
-    /* Add fonts and colors in here. */
+    /* Add fonts and colors in here. Calibre?*/
     background-color: OliveDrab;
 }
 
@@ -19,6 +19,7 @@ div {
     row-gap: 1em;
     background-color: beige;
 }
+/* Expand header & footer to be as wide as aesthetically possible. 12 cols w/ a margin. */
 
 /* About */
 
