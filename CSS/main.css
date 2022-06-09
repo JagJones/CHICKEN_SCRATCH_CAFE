@@ -3,16 +3,22 @@
 
 /* All Pgs */
 
-body {
+*{
+    /* Add fonts and colors in here. */
     background-color: OliveDrab;
 }
 
-div {
-    background-color: beige;
+/* Main */
+/* Add grid gaps between the individual pg sections. */
+body {
+    display: grid;
+    margin: 1em;  
 }
 
-/* Main */
-
+div {
+    row-gap: 1em;
+    background-color: beige;
+}
 
 /* About */
 
