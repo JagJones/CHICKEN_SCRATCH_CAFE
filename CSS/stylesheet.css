@@ -1,5 +1,7 @@
 /* Background color for all pgs =   */
 /* Main font =  */
+/* Add a seperate grid css pg? */
+
 
 /* All Pgs */
 
@@ -17,6 +19,9 @@ body {
 
 div {
     row-gap: 1em;
+/* Working with the shorthanded grid spans here. The goal is to have an image and the text with the 
+button be 50/50. */
+    grid-column: 1/1;
     background-color: beige;
 }
 /* Expand header & footer to be as wide as aesthetically possible. 12 cols w/ a margin. */
