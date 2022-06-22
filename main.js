@@ -4,4 +4,10 @@ The goal is to use the html/css to list the pricings & times.
 Have JS use a clicking event listener and then do something. 
     - Return the price the user selects back to them asking them to confirm or cancel.
     - Then returning a new message stating 'Ok X, we'll see you on MM/DD at HH:MM. Can't wait to see you then!'
+Possibly create a 'Grand Opening' promo deal so I get to with play with boolean values.
 */
+
+// Test Code
+
+let TEST = 'Testing---Testing---How you doin?';
+alert(TEST);
