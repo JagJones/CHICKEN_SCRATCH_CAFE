@@ -1,11 +1,12 @@
-/* Background color for all pgs =   */
-/* Main font =  */
+/* Background color for all pgs = OliveDrab */
+/* Main font = TBD */
 /* Add a seperate grid css pg? */
 
 
 /* All Pgs */
 
 *{
+    background-color: olivedrab;
 }
 
 /* Main */
