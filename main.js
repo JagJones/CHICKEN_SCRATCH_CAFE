@@ -8,6 +8,43 @@ Possibly create a 'Grand Opening' promo deal so I get to with play with boolean 
 */
 
 // Test Code
+// let TEST = 'Testing---Testing---How you doin?';
+// alert(TEST);
 
-let TEST = 'Testing---Testing---How you doin?';
-alert(TEST);
+
+//------ Main Pg ------
+
+/* An event listener that open the collapsed menu and then closes it back up once the user is done. 
+This will be applied @ smaller media queries. 
+This is called a 'toggle' and we MIGHT use an icon somehow when using it instead of text. */
+
+//EX. (So none of this will do anything, it's just examples!)
+// button.addEventListener('click', function() {
+//       const review = document.getElementById('review');
+//         if (review.classList.contains('d-none')) {
+//             review.classList.remove('d-none');
+//             button.textContent = 'CLOSE REVIEW'
+//         }
+//         else {
+//             review.classList.add('d-none');
+//             button.textContent = 'SEE REVIEW'
+//         })
+// }
+
+//------ Schedule Pg ------
+
+/* An event listener which will return the user's date & time after they have made their selected selection.
+This will be linked to the buttons that are at the bottom of each price selection. */
+
+//EX. (So none of this will do anything, it's just examples!)
+// button.addEventListener('click', function() {
+//     console.log(click);
+// })
+
+//------ Menu Pg ------
+
+
+
+//------ About Pg ------
+
+
