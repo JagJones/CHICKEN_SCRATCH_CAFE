@@ -11,6 +11,8 @@ Possibly create a 'Grand Opening' promo deal so I get to with play with boolean 
 let TEST = 'Testing---Testing---How you doin?';
 alert(TEST);
 
+//------ All Pgs ------
+/* Button hover effect. /*
 
 //------ Main Pg ------
 
@@ -40,6 +42,8 @@ This will be linked to the buttons that are at the bottom of each price selectio
 // button.addEventListener('click', function() {
 //     console.log(click);
 // })
+
+/* Add an event listener for that makes a highlighted border around the time the user is selecting. */
 
 //------ Menu Pg ------
 

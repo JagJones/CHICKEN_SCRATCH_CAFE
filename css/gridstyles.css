@@ -5,3 +5,9 @@ body {
     display: grid;
     margin: 1em;
 }
+
+/*-- Media Queries --*/
+
+@media screen {
+    
+}

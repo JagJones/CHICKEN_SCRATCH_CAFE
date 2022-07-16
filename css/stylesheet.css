@@ -7,11 +7,11 @@
 
 *{
     background-color: olivedrab;
-    
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-/* Main */
-/* Add grid gaps between the individual pg sections. */
+/* Main Pg*/
+/* Add horizontal grid gaps between the individual pg sections. */
 
 body {
     color: rgb(248, 248, 241); 
@@ -30,8 +30,11 @@ div {
 /* Working with the shorthanded grid spans here. The goal is to have an image and the text with the 
 button be 50/50. */
     grid-column: 1/3;
-    background-color: rgb(219, 219, 144);
 } 
+
+button {
+    background-color: rgb(233, 202, 119);
+}
 
 #hero--pic {
     max-width: 100%;
