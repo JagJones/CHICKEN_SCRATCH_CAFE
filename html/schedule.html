@@ -12,7 +12,7 @@
 <body>
     <header>
         <nav>
-            <ul>
+            <ul class="li--nav">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="schedule.html">Schedule</a></li>
@@ -30,8 +30,19 @@
     <!-- </ul> -->
 
     <form action="" method="POST">
+        <label for="name">Name:</label>
         <input type="text" name="full-name" id="full-name">
-        <input type="sumbit" name="submit" id="submit">
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email">
+        <label for="people">Number of People:</label>
+        <input>
+        <label for="start-date">Select Your Date:</label>
+        <input type="date" id="start" name="trip-start" value="yyyy-mm-dd" min="2022-07-01" max="2025-07-01">
+        <label for="start-time">Select Your Time of Arrival:</label>
+        <input type="time" id="visit" name="visit" min="09:00" max="18:00" required>
+        <small>Cafe hours are 9am to 6pm - Thursday thru Sunday.</small>
+        <label for="timeslot">Choose Your Stay:</label>
+        <input type="radio">
     </form>
 
     <div class="includes">
@@ -42,10 +53,10 @@
     <aside class="banner">
         Don't forget to grab some treats for yourself at the cafe!
         <!-- Add a generic pic of some hot drink and a baked good here. -->
-        <button>Go to Cafe</button>
+        <button class="btn--sub">Go to Cafe</button>
     </aside>
 
-    <a href="index.html">Return Home</a>
+    <a class="home" href="index.html">Return Home</a>
 
     <footer id="footer">
         <span>Louisville, Ky &copy;2022 - Chicken Scratch Cafe</span>
