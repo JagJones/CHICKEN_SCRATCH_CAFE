@@ -1,10 +1,18 @@
 
-/*-- Main Pg --*/
+/*-- Main --*/
 
 body {
     display: grid;
-    margin: 1em;
+    grid-template-columns: 25em;
 }
+
+header,
+footer {
+    grid-column-start: 1;
+    grid-column-end: 5;
+}
+
+/*-- Other Pgs --*/
 
 /*-- Media Queries --*/
 

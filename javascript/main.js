@@ -8,8 +8,8 @@ Possibly create a 'Grand Opening' promo deal so I get to with play with boolean 
 */
 
 // Test Code
-let TEST = 'Testing---Testing---How you doin?';
-alert(TEST);
+// let TEST = 'Testing---Testing---How you doin?';
+// alert(TEST);
 
 //------ All Pgs ------
 /* Button hover effect. /*
