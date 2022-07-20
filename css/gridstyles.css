@@ -1,18 +1,55 @@
-
-/*-- Main --*/
+/*-- All --*/
 
 body {
     display: grid;
-    grid-template-columns: 25em;
 }
 
+/*-- Nav --*/
+
+ul.li--nav > li > a, {
+    grid-column-start: 3;
+}
+
+
+/*-- Main --*/
+
 header,
-footer {
+footer, 
+.main,
+.main--contact {
     grid-column-start: 1;
     grid-column-end: 5;
 }
 
+.div--schedule {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.div--cafe {
+    grid-column-start: 3;
+    grid-column-end: 5;
+}
+
 /*-- Other Pgs --*/
+
+
+/*- Sheduling -*/
+
+html {
+    grid
+}
+
+form {
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+/*-- Images --*/
+.hero--image {
+    height: calc(300px + 20vw);
+}
+
 
 /*-- Media Queries --*/
 
