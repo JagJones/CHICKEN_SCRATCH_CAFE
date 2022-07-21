@@ -10,54 +10,58 @@
     <title>Chicken Scratch Cafe - Schedule a Date</title>
 </head>
 <body>
+
     <header>
-        <nav>
-            <ul class="li--nav">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="schedule.html">Schedule</a></li>
-                <li><a href="menu.html">Cafe</a></li>
-                <li><a href="#footer">Contact</a></li>
-            </ul>
-        </nav>
+        <div class="nav--container">
+            <nav>
+                <div id="li-nav">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="schedule.html">Schedule</a>
+                    <a href="menu.html">Cafe</a>
+                    <a href="#footer">Contact</a>
+                </div>
+            </nav>
+        </div>
     </header>
 
-    <form action="" method="POST">
-        <label class="label-fr" for="name">Name:</label><br>
+    <form>
+        <label for="name">Name:</label><br>
         <input type="text" name="full-name" id="full-name"><br><br>
 
-        <label class="label-fr" for="email">Email:</label><br>
+        <label for="email">Email:</label><br>
         <input type="email" name="email" id="email"><br><br>
 
-        <label class="label-fr" for="people">Number of Guests:</label><br>
-        <input type="radio" id="guests1" name="guests1" value="sm">
-        <label for="guests1">1 - 3 People</label><br>
-        <input type="radio" id="guests2" name="guests2" value="med">
-        <label for="guests2">4 - 8 People</label><br>
-        <input type="radio" id="guests3" name="guests3" value="lrg">
-        <label for="guests3">Party Groups</label><br>
-        <small>Party groups are 8+ guests and will require additional information via email.</small><br><br>
-
-        <label class="label-fr" for="start-date">Select Your Date:</label><br>
+        <label for="start-date">Select Your Date:</label><br>
         <input type="date" id="date" name="date" value="yyyy-mm-dd" min="2022-07-01"><br><br>
 
-        <label class="label-fr" for="start-time">Select Your Time of Arrival:</label><br>
+        <label for="start-time">Select Your Time of Arrival:</label><br>
         <input type="time" id="time" name="time" min="09:00" max="18:00" required><br>
         <small>Cafe hours are 9am to 6pm - Thursday thru Sunday.</small><br><br>
 
-        <label class="label-fr" for="timeslot">How Long Are You Staying:</label><br>
+        <label id="time-slot" for="timeslot">How Long Are You Staying:</label><br>
         <input type="radio" id="time-length1" name="time-length1" value="30min">
         <label for="30min">30 Minutes</label><br>
         <input type="radio" id="time-length2" name="time-length2" value="45min">
         <label for="45min">45 Minutes</label><br>
         <input type="radio" id="time-length3" name="time-length3" value="1hr">
         <label for="1hr">1 Hour</label><br><br>
+        
+        <label id="people" for="people">Number of Guests:</label><br>
+        <input type="radio" id="guests1" name="guests1" value="sm">
+        <label for="guests1">1 - 3 People</label><br>
+        <input type="radio" id="guests2" name="guests2" value="med">
+        <label for="guests2">4 - 8 People</label><br>
+        <input type="radio" id="guests3" name="guests3" value="lrg">
+        <label for="guests3">Party Groups</label><br>
+        <small>Groups of 8+ guests will require additional information via email.</small><br><br>
         <input class="submit" type="submit" value="Submit"> <br><br>
     </form>
 
     <div class="promo">
         <img class="promo-pic" src="/images/pexels-oleksandr-pidvalnyi-375510.jpg" alt="Chicken going ham on some feed.">
-        <h2 class="promo">
+        <h2 class="promo-text">
+            <hr>
             Each visit includes unlimited access to dried mealworms regardless of the amount of time you choose to spend with our chickens!
         </h2>
     </div>

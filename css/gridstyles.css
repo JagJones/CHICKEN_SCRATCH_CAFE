@@ -21,6 +21,12 @@ footer,
     grid-column-end: 5;
 }
 
+/* .div--schedule,
+.div--cafe {
+    justify-content: center;
+    align-content: center;
+} */
+
 .div--schedule {
     grid-column-start: 1;
     grid-column-end: 3;
@@ -54,6 +60,11 @@ form {
 
 /*-- Media Queries --*/
 
-@media screen {
-    
-}
+/* @media only screen and (max-width: 600px) {
+/* Tablets */
+/*.div--schedule,
+    .div--cafe {
+        width: 100%;
+        grid-column-start: 1;
+        grid-column-end: 3;
+    } */

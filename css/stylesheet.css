@@ -20,9 +20,14 @@ html {
 /*----- Links -----*/
 
 #li-nav > a,
-ul.li--contact >li > a {
+ul.li--contact >li > a,
+.home {
     padding: 10px 15px;
     text-decoration: none;
+}
+
+.home {
+    grid-column: ;
 }
 
 #li-nav > a {
@@ -73,8 +78,15 @@ form {
     border-style: solid;
     border-width: 1px;
     text-align: center;
-    padding: 25px;
-    margin: 40px;
+    padding: 30px;
+    margin: 60px;
+    background: linear-gradient(to bottom, rgb(133, 182, 35), rgb(84, 112, 27));
+}
+
+input, 
+label {
+    margin-left: 80px;
+    margin-right: 80px;
 }
 
 input {
@@ -82,11 +94,21 @@ input {
     color:rgba(0, 0, 0, 0.5);
 }
 
-.label-fr {
-    font:26px;
+label,
+small {
+    background: none;
 }
 
-/* Why is the font style not doing anything to the font?
+.promo {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+hr {
+    width: 20em;
+}
+
 /* Fix the radio buttons- should only be able to select 1 option and should be able to unselect buttons.
 
 
@@ -201,14 +223,33 @@ button:hover,
     opacity: 1;
 }
 /* Make sure the overlay resizes with the pics & try to get it on the 
-bottom of the pic instead of the middle.
+bottom of the pic instead of the middle.*/
+
+.promo-pic,
+.schedule-pic,
+.cafe-pic {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+}
+
+.promo-pic {
+    max-width: 55em;
+    max-height: 55em;
+}
+
+.schedule-pic {
+    max-width: 28em;
+    max-height: 28em;
+}
+
+.cafe-pic {
+    max-width: 30em;
+    max-height: 30em;
+}
 
 
 /*- Scheduling Pg -*/
 
-h2 > .promo--pic {
-    max-width: .5em;
-    max-height: .5em;
-}
+
 
  
