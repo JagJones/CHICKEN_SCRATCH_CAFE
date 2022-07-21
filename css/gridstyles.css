@@ -6,9 +6,9 @@ body {
 
 /*-- Nav --*/
 
-nav {
-    grid-column-start: 3;
-}
+/* nav {
+    justify-items: flex-end;
+} */
 
 
 /*-- Main --*/
@@ -21,11 +21,11 @@ footer,
     grid-column-end: 5;
 }
 
-/* .div--schedule,
-.div--cafe {
-    justify-content: center;
-    align-content: center;
-} */
+
+.menu {
+    grid-column-start: 1;
+    grid-column-end: 5;
+} 
 
 .div--schedule {
     grid-column-start: 1;
@@ -36,15 +36,6 @@ footer,
     grid-column-start: 3;
     grid-column-end: 5;
 }
-
-/*-- Other Pgs --*/
-
-
-/*- Sheduling -*/
-
-/* html {
-    grid-template-columns: 25em;
-} */
 
 
 form {
@@ -57,6 +48,34 @@ form {
     height: calc(500px + 35vw);
 }
 
+.hero--content {
+	margin-left: calc(40px + 4vw);
+	margin-bottom: calc(60px + 3vw);
+	/* make this a grid container as well */
+	display: grid;
+	justify-items:center;
+    align-items: center;
+	/* grid-gap: calc(22px + 1vw);  */
+} 
+
+.hero--text {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    /* justify-content: center;
+    align-content: center; */
+    /* text-align: center;*/
+    /* top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+    /* font-size: calc(21px + 1vw); */
+}
+
+.promo {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
 
 /*-- Media Queries --*/
 

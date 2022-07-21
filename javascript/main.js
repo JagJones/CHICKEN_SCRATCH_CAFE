@@ -45,10 +45,11 @@ This will be linked to the buttons that are at the bottom of each price selectio
 
 document.getElementById("submit").onclick = function newValue() {
     let confirmSched = 
-    document.getElementById("name", "date", "time", "email").value;
+    document.getElementById("name").value();
     alert(confirmSched);
 };
 
+// , "date", "time", "email"
 
 /* Need to get the function to return the selected timeslot and 
 not just all the slots.
