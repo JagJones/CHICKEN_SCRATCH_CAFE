@@ -43,7 +43,15 @@ This will be linked to the buttons that are at the bottom of each price selectio
 //     console.log(click);
 // })
 
-/* Add an event listener for that makes a highlighted border around the time the user is selecting. */
+document.getElementById("submit").onclick = function newValue() {
+    let confirmSched = 
+    document.getElementById("name", "date", "time", "email").value;
+    alert(confirmSched);
+};
+
+
+/* Need to get the function to return the selected timeslot and 
+not just all the slots.
 
 //------ Menu Pg ------
 

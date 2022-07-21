@@ -6,7 +6,7 @@ body {
 
 /*-- Nav --*/
 
-ul.li--nav > li > a, {
+nav {
     grid-column-start: 3;
 }
 
@@ -36,9 +36,10 @@ footer,
 
 /*- Sheduling -*/
 
-html {
-    grid
-}
+/* html {
+    grid-template-columns: 25em;
+} */
+
 
 form {
     grid-column-start: 1;
@@ -47,7 +48,7 @@ form {
 
 /*-- Images --*/
 .hero--image {
-    height: calc(300px + 20vw);
+    height: calc(500px + 35vw);
 }
 
 

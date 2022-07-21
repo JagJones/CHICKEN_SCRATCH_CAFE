@@ -14,57 +14,47 @@ html {
 
 /*----- Main Pg -----*/
 
-/* .main--header {
-    font-size: 2.5em;
 
-} */
 
 
 /*----- Links -----*/
 
-ul.li--nav > li > a,
+#li-nav > a,
 ul.li--contact >li > a {
-    display:grid;
     padding: 10px 15px;
     text-decoration: none;
-    color: blanchedalmond;
 }
 
-ul.li--nav > li, 
-ul.li--contact >li {
-    list-style: none;
+#li-nav > a {
+    font-size: 1.2em;
 }
 
-ul.li--nav > li > a {
-    font-size: 2em;
+.nav--container {
+background: none;
+}
+
+#li-nav a:hover, 
+ul.li--contact >li > a:hover {
+    color:rgb(238, 149, 90);
+} 
+/* Fix so the hover color affects visited links as well. */
+
+/* #li-nav > a:visited,  */
+ul.li--contact >li > a:visited {
+    color:rgb(199, 172, 98);
 }
 
 ul.li--contact >li > a {
     font-size: 1.5em;
 }
 
-ul.li--nav > li > a:hover, 
-ul.li--contact >li > a:hover {
-    color:rgb(238, 149, 90);
-} 
-/* Fix so the hover color affects visited links as well. */
-
-ul.li--nav > li > a:visited, 
-ul.li--contact >li > a:visited {
-    color:rgb(199, 172, 98);
+ul.li--contact >li {
+    list-style: none;
 }
-
 
 /*----- Content Sections -----*/
 
 /*- Main -*/
-
-/* div {
-    row-gap: 1em;
-- Working with the shorthanded grid spans here. The goal is to have an image and the text with the 
-button be 50/50. - 
-    grid-column: 1/3;
-}  */
 
 .div--schedule,
 .div--cafe {
@@ -89,6 +79,7 @@ form {
 
 input {
     background:rgb(248, 248, 241);
+    color:rgba(0, 0, 0, 0.5);
 }
 
 .label-fr {
@@ -151,37 +142,36 @@ button:hover,
     background-repeat: no-repeat;
     background-size: cover;
     /* position: relative; */
-    height: calc(300px + 20vw);
-}
-
-.hero--text {
-    background: none;
 }
 
 .hero-tint {
 	width: 100%;
 	height: 100%;
 	background-color: rgba(0,0,0,0.3);
-	display: grid;
-	justify-items: center;
-	align-items: center;
 }
 
 .hero-content {
-	margin-left: calc(40px + 4vw);
+	/*margin-left: calc(40px + 4vw);
 	margin-bottom: calc(40px + 3vw);
 	/* make this a grid container as well */
-	display: grid;
-	justify-items: center;
-	grid-gap: calc(22px + 1vw);
-}
+	/* display: grid;
+	justify-items: center; */
+	/* grid-gap: calc(22px + 1vw); */
+    /* text-align: center; */
+} 
 
 .hero--text {
-    text-align: center;
-    top: 50%;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    /* justify-content: center;
+    align-content: center; */
+    /* text-align: center;*/
+    background: none;
+    /* top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: calc(21px + 1vw);
+    transform: translate(-50%, -50%); */
+    /* font-size: calc(21px + 1vw); */
 }
 
 /*- Chick Pics -*/

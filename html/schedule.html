@@ -24,9 +24,11 @@
 
     <form action="" method="POST">
         <label class="label-fr" for="name">Name:</label><br>
-        <input type="text" name="full-name" id="full-name"><br>
+        <input type="text" name="full-name" id="full-name"><br><br>
+
         <label class="label-fr" for="email">Email:</label><br>
         <input type="email" name="email" id="email"><br><br>
+
         <label class="label-fr" for="people">Number of Guests:</label><br>
         <input type="radio" id="guests1" name="guests1" value="sm">
         <label for="guests1">1 - 3 People</label><br>
@@ -35,12 +37,15 @@
         <input type="radio" id="guests3" name="guests3" value="lrg">
         <label for="guests3">Party Groups</label><br>
         <small>Party groups are 8+ guests and will require additional information via email.</small><br><br>
+
         <label class="label-fr" for="start-date">Select Your Date:</label><br>
-        <input type="date" id="start" name="trip-start" value="yyyy-mm-dd" min="2022-07-01"><br><br>
-        <label class="label-fr"for="start-time">Select Your Time of Arrival:</label><br>
-        <input type="time" id="visit" name="visit" min="09:00" max="18:00" required><br>
+        <input type="date" id="date" name="date" value="yyyy-mm-dd" min="2022-07-01"><br><br>
+
+        <label class="label-fr" for="start-time">Select Your Time of Arrival:</label><br>
+        <input type="time" id="time" name="time" min="09:00" max="18:00" required><br>
         <small>Cafe hours are 9am to 6pm - Thursday thru Sunday.</small><br><br>
-        <label class="label-fr" for="timeslot">How is Your Stay:</label><br>
+
+        <label class="label-fr" for="timeslot">How Long Are You Staying:</label><br>
         <input type="radio" id="time-length1" name="time-length1" value="30min">
         <label for="30min">30 Minutes</label><br>
         <input type="radio" id="time-length2" name="time-length2" value="45min">
