@@ -6,9 +6,39 @@ body {
 
 /*-- Nav --*/
 
-/* nav {
-    justify-items: flex-end;
-} */
+/*--- Burg Nav ---*/
+/* @media (max-width: 768px) {
+    .nav {
+        overflow: hidden;
+        background-color: rgb(85, 80, 85);
+        position: relative;
+        margin-left: .3em;
+        margin-right: .3em;
+        box-shadow: 5px 5px 10px rgb(68, 99, 12)
+      }
+      
+      /* Hide Links */
+      /* .nav #myLinks{
+        display: none;
+      } */
+       
+      /* Nav Links */
+      /* .nav a {
+        color: white;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 15px;
+        display: block;
+      }  */
+      
+      /* Burg Style */
+       /*.nav a.icon {
+        background: black;
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+      } */
 
 
 /*-- Main --*/
@@ -37,6 +67,8 @@ footer,
     grid-column-end: 5;
 }
 
+
+align-content: center;
 
 form {
     grid-column-start: 1;
@@ -79,11 +111,16 @@ form {
 
 /*-- Media Queries --*/
 
-/* @media only screen and (max-width: 600px) {
-/* Tablets */
-/*.div--schedule,
-    .div--cafe {
-        width: 100%;
-        grid-column-start: 1;
-        grid-column-end: 3;
-    } */
+/* 
+1. Have the schedule & cafe divs on the main pge go from 1 to 2 cols @ bigger sized screens.
+2. Have the nav go from collapsed to spread across the screen @ bigger screen sizes.
+3. Have the schedule divs go from 1 to 2 cols @ larger screens. 
+
+/* @media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+.div--schedule,
+.div--cafe {
+    grid-column-start: 1;
+    grid-column-end: 3;
+} */

@@ -35,24 +35,43 @@ This is called a 'toggle' and we MIGHT use an icon somehow when using it instead
 
 //------ Schedule Pg ------
 
-/* An event listener which will return the user's date & time after they have made their selected selection.
-This will be linked to the buttons that are at the bottom of each price selection. */
-
-//EX. (So none of this will do anything, it's just examples!)
-// button.addEventListener('click', function() {
-//     console.log(click);
-// })
-
-document.getElementById("submit").onclick = function newValue() {
-    let confirmSched = 
-    document.getElementById("name").value();
-    alert(confirmSched);
+/* An event listener which will return the user's info after they have made their selections and verifies the user's name. 
+In the future I plan to get all of the form elements verified. */
+function rtnInfo() {
+    let confName = document.getElementById("name").value;
+    let confirmInfo = false;
+    while(confirmInfo == false) {
+        let confName = prompt("Ope, looks like we're missing some info! Please enter a name.") 
+        if (confirm ("Please confirm your name is " + confName + ".")){ 
+        alert("Thanks "+confName+", we can't wait for you to come see us!");
+        confirmInfo = true;
+    }
+    }
 };
 
-// , "date", "time", "email"
+
+/* This block worked before I started playing around.
+// function rtnInfo() {
+//     let confirmInfo = 
+//     document.getElementById("Thanks "+"name"+" for coming to see us!").value;
+//     alert(confirmInfo);
+// };
+
+// document.getElementById("date").value;
+//     document.getElementById("time").value;
+//     document.getElementById("email").value;
+
+/*-- Get this to work for =<8 people. Get it to work with rtnInfo so it pops up before confirming info--*/
+// function conLrgParty() {
+//     let lrgParty =
+//     document.getElementById("numGuests").value;
+//     confirm("Parties of 8 or more have an automatic 20% gratuity charge and can chose to have bottomless coffee upon arrival.")
+// }
+
+// , 
 
 /* Need to get the function to return the selected timeslot and 
-not just all the slots.
+not just all the slots.*/
 
 //------ Menu Pg ------
 
