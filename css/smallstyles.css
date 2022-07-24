@@ -28,28 +28,8 @@ h2 {
     font-size: 18px;
 }
 
-.index {
-    background-image: url("/images/chick_pic01.JPG");
-    min-height: 100%;
-    background-attachment: fixed;
-    background-position:center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
 
-.main--container,
-.sub--pg {
-    background: olivedrab;
-}
-
-.main--container {
-    padding: 20px;
-}
-
-/*----- Main Pg -----*/
-
-
-/*----- Links -----*/
+/*----- Nav & Links -----*/
 
 #li-nav > a,
 ul.li--contact >li > a,
@@ -58,21 +38,17 @@ ul.li--contact >li > a,
     text-decoration: none;
 }
 
-/* .home {
-    grid-column: ;
-} */
 
 #li-nav > a {
     font-size: 1.2em;
-    opacity: 100%;
+    opacity: solid;
 }
 
 .nav--container {
 background:#0f0d0d;
 opacity: 80%;
 margin-top: 5px;
-margin-bottom: 5px;
-padding: 5px;
+padding: 10px;
 }
 
 #li-nav a:hover,
@@ -89,9 +65,21 @@ ul.li--contact >li {
     list-style: none;
 }
 
-/*----- Content Sections -----*/
+
+/*----- Pages -----*/
+
 
 /*- Main -*/
+
+.main--container,
+.sub--pg {
+    background-image: linear-gradient(to bottom right, olivedrab, rgb(149, 209, 8));
+}
+
+.main--container {
+    padding: 20px;
+}
+
 
 .div--schedule,
 .div--cafe {
@@ -100,8 +88,6 @@ ul.li--contact >li {
     margin: 15px 20px;
     padding: 20px 15px;
 }
-
-/*- About -*/
 
 
 /*- Scheduling -*/
@@ -149,10 +135,8 @@ hr {
     text-align: center;
 }
 
-/* Fix the radio buttons- should only be able to select 1 option and should be able to unselect buttons.
 
-
-/*----- Footer -----*/
+/*- Footer -*/
 
 footer, 
 p.footer-info {
@@ -202,15 +186,15 @@ button:hover,
 
 /*- Hero -*/
 
-.hero--content {
-	/* margin-left: calc(40px + 4vw);
-	margin-bottom: calc(40px + 3vw); */
-	/* make this a grid container as well */
-	display: grid;
-	/* justify-items:flex-end; */
-	/* grid-gap: calc(22px + 1vw);  */
-    /* text-align: center; */
-} 
+.index {
+    background-image: url("/images/chick_pic01.JPG");
+    min-height: 100%;
+    background-attachment: fixed;
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 
 .hero--text {
     background: none;
@@ -282,3 +266,131 @@ bottom of the pic instead of the middle.*/
     border-style: solid;
     border-width: 1px;
 }
+
+
+/*-- All --*/
+
+body {
+    display: grid;
+}
+
+/*-- Nav --*/
+
+/*--- Burg Nav ---*/
+/* @media (max-width: 768px) {
+    .nav {
+        overflow: hidden;
+        background-color: rgb(85, 80, 85);
+        position: relative;
+        margin-left: .3em;
+        margin-right: .3em;
+        box-shadow: 5px 5px 10px rgb(68, 99, 12)
+      }
+      
+      /* Hide Links */
+      /* .nav #myLinks{
+        display: none;
+      } */
+       
+      /* Nav Links */
+      /* .nav a {
+        color: white;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 15px;
+        display: block;
+      }  */
+      
+      /* Burg Style */
+       /*.nav a.icon {
+        background: black;
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+      } */
+
+
+/*-- Main --*/
+
+header,
+footer, 
+.main,
+.main--contact {
+    grid-column-start: 1;
+    grid-column-end: 5;
+}
+
+
+.menu {
+    grid-column-start: 1;
+    grid-column-end: 5;
+} 
+
+.div--schedule {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.div--cafe {
+    grid-column-start: 3;
+    grid-column-end: 5;
+}
+
+
+align-content: center;
+
+form {
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+/*-- Images --*/
+.hero--image {
+    height: calc(500px + 35vw);
+}
+
+.hero--content {
+	margin-left: calc(40px + 4vw);
+	margin-bottom: calc(60px + 3vw);
+	/* make this a grid container as well */
+	display: grid;
+	justify-items:center;
+    align-items: center;
+	/* grid-gap: calc(22px + 1vw);  */
+} 
+
+.hero--text {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    /* justify-content: center;
+    align-content: center; */
+    /* text-align: center;*/
+    /* top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+    /* font-size: calc(21px + 1vw); */
+}
+
+.promo {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+/*-- Media Queries --*/
+
+/* 
+1. Have the schedule & cafe divs on the main pge go from 1 to 2 cols @ bigger sized screens.
+2. Have the nav go from collapsed to spread across the screen @ bigger screen sizes.
+3. Have the schedule divs go from 1 to 2 cols @ larger screens. 
+
+/* @media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+.div--schedule,
+.div--cafe {
+    grid-column-start: 1;
+    grid-column-end: 3;
+} */
