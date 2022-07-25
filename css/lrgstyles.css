@@ -1,0 +1,109 @@
+@media only screen and (min-width : 1024px) {
+
+    body {
+        display: grid;
+    }
+
+    .lrg-3 {
+        width:25%;
+    }
+
+
+    h1 {
+        color: red;
+    }
+
+    h1 { 
+        font-size: 8em; 
+        line-height: 26.4px; 
+    }
+    
+    h2 { 
+        font-size: 3em; 
+        line-height: 15.4px; 
+    }
+
+/*----- Nav & Links -----*/
+
+.lrg-3 {
+    width:25%;
+}
+
+    nav > div.nav-container > ul >li {
+        width: auto;
+    }
+
+    nav > div.nav-container > ul >li a {
+        padding: .7rem 2rem;
+    }
+
+    ul.li--contact >li > a {
+        font-size: 1.5em;
+    }
+
+    ul.li--contact >li {
+        list-style: none;
+    }
+
+
+/*----- Pages -----*/
+
+/*- Main -*/
+
+    .main--container {
+    padding: 1.5em;
+    }
+
+/* .div--schedule {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.div--cafe {
+    grid-column-start: 3;
+    grid-column-end: 5;
+} */
+
+.div--schedule,
+.div--cafe {
+    border-style: solid;
+    border-width: 1px;
+    margin: 15px 20px;
+    padding: 20px 15px;
+}
+
+/*- Schedule -*/
+
+form {
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+
+/*----- Images -----*/
+
+/*- Main -*/
+.schedule-pic {
+    max-width: 30em;
+    max-height: 30em;
+}
+
+.cafe-pic {
+    max-width: 30em;
+    max-height: 30em;
+}
+
+/*- About -*/
+
+.chicken--pic {
+    display:grid;
+    height: 30em;
+    width: 25em;
+    
+}
+
+/*- Sheduling -*/
+
+
+
+} /*- End of media query -*/

@@ -15,3 +15,31 @@ Once on the website the user should be able to go to...
 
 When viewing the code you can see...
 -   The use of nth of child in the CSS sheets.
+
+
+Project Goals:
+. Use JS 3 ways
+    - Return input to the user in an alert. 
+    - Validate the info.
+    - Burger nav.
+. Have 3-4 pgs to show successful pg linking.
+    - Main
+    - About
+    - Schedule
+    - Cafe 
+. Levels of media queries.
+    - Mobile, 768px, and 1024px.
+
+Function & Aesthetics Goals:
+. Main Pg
+    - Navigation menu is collapsable at smaller screens then expands across the page at <1024px.
+    - Use CSS grid to go from 1 columns at smaller screens to 2 columns at larger screens. 
+. About Pg
+    - Use CSS grid to go from 1 column on small screens, 2 columns on medium screens and to 3 columns on larger screens.
+    - Use CSS to create a animation which shows each chicken's name across their image.
+. Scheduling Pg
+    - Use HTML to create a form which the user can fill out. 
+    - Use JavaScript to return the information that was entered to confirm that it's correct/ not null.
+    (As of 7/25 I can only get this to work for the name field and it only confirms that the field isn't blank on the first try.)
+    . Use CSS grid to again go from 1 column at smaller screens then 2 columns after <1024px.
+

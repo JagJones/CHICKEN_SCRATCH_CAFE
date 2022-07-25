@@ -27,53 +27,89 @@
         </div>
     </header>
 
-    <form>
-        <label for="name">Name:</label><br>
-        <input type="text" name="name" id="name">
-        <br><br>
+    <div class="sm-12 md-6 lrg-3">
+        <form>
+            <label for="name">Name:</label><br>
+            <input type="text" name="name" id="name">
+            <br><br>
 
-        <label for="email">Email:</label><br>
-        <input type="email" name="email" id="email">
-        <br><br>
+            <label for="email">Email:</label><br>
+            <input type="email" name="email" id="email">
+            <br><br>
 
-        <label for="start-date">Select Your Date:</label><br>
-        <input type="date" id="date" name="date" value="yyyy-mm-dd" min="2022-07-01">
-        <br><br>
+            <label for="start-date">Select Your Date:</label><br>
+            <input type="date" id="date" name="date" value="yyyy-mm-dd" min="2022-07-01">
+            <br><br>
 
-        <label for="start-time">Select Your Time of Arrival:</label><br>
-        <input type="time" id="time" name="time" min="09:00" max="18:00" required><br>
-        <small>Cafe hours are 9am to 6pm - Thursday thru Sunday.</small>
-        <br><br>
+            <label for="start-time">Select Your Time of Arrival:</label><br>
+            <input type="time" id="time" name="time" min="09:00" max="18:00" required><br>
+            <small>Cafe hours are 9am to 6pm - Thursday thru Sunday.</small>
+            <br><br>
 
-        <label id="people" for="people">Number of Guests:</label><br>
-        <input type="number" id="numGuests" name="numGuests" value="numGuests" min="1">
-        <small>Groups of 8+ guests will require additional information via email.</small>
-        <br><br>
+            <label id="people" for="people">Number of Guests:</label><br>
+            <input type="number" id="numGuests" name="numGuests" value="numGuests" min="1">
+            <small>Groups of 8+ guests will require additional information via email.</small>
+            <br><br>
 
-        <label id="time-slot" for="timeslot">Length of Your Stay:</label><br>
-        <input type="text" id="timeLength"  list="time-length">
-        <datalist id="time-length">
-            <option value="30 Minutes">
-            <option value="45 Minutes">
-            <option value="1 Hour">
-        </datalist>
-        <br><br>
+            <label id="time-slot" for="timeslot">Length of Your Stay:</label><br>
+            <input type="text" id="timeLength"  list="time-length">
+            <datalist id="time-length">
+                <option value="30 Minutes">
+                <option value="45 Minutes">
+                <option value="1 Hour">
+            </datalist>
+            <br><br>
 
-        <button id="submit" onclick="rtnInfo()">Submit</button><br><br>
-    </form>
+            <button id="submit" onclick="rtnInfo()">Submit</button><br><br>
+        </form>
 
-    <div class="promo">
-        <img class="promo-pic" src="/images/pexels-oleksandr-pidvalnyi-375510.jpg" alt="Chicken going ham on some feed.">
-        <h3 class="promo-text">
-            <hr>
-            Each visit includes unlimited access to dried mealworms regardless of the amount of time you choose to spend with our chickens!
-        </h3>
+        <div class="promo">
+            <img class="promo-pic" src="/images/pexels-oleksandr-pidvalnyi-375510.jpg" alt="Chicken going ham on some feed.">
+            <h3 class="promo-text">
+                <hr>
+                Each visit includes unlimited access to dried mealworms regardless of the amount of time you choose to spend with our chickens!
+            </h3>
+        </div>
     </div>
 
     <a class="home" href="index.html">Return Home</a>
 
-    <footer id="footer">
-        <p class="footer-info">Louisville, Ky &copy;2022 - Chicken Scratch Cafe</p>
+    <footer id="footer" class="clearfix">
+        <div class="footer-info">
+            <section class="addy sm-12 md-6 lrg-3"><h4>Louisville Location:</h4>
+                <address>5216 New Cut Rd,
+                    <br>
+                    Lousiville, KY 40214
+                </address>
+                <phone>502-000-0000</phone>
+            </section>
+            <section class="addy sm-12 md-6 lrg-3"><h4>Indianapolis Location:</h4> 
+                <address>6363 Spring Mill Rd,
+                    <br>
+                    Indianapolis, IN 46260
+                </address>
+                <phone>502-000-0000</phone>
+            </section>
+            <section class="addy sm-12 md-6 lrg-3"><h4>Lexington Location:</h4>
+                <address>4001 Athens Boonesboro Rd, 
+                    <br>
+                    Lexington, KY 40509
+                </address>
+                <phone>502-000-0000</phone>
+                
+            </section>
+            <hr>
+            <section class="social sm-12 md-6 lrg-3">
+                <h4>Social</h4>
+                <ul class="li--contact">
+                    <li><a href="chicken.scratch@gmail.com">Email</a></li>
+                    <li><a href="@chicken_scratch_cafe">Twitter</a></li>
+                    <li><a href="@chicken_scratch_cafe">Instagram</a></li>
+                </ul>
+            </section>
+
+            <p>Louisville, Ky &copy;2022 - Chicken Scratch Cafe</p>
+        </div>
     </footer>
 
     <script src='/javascript/main.js'></script>

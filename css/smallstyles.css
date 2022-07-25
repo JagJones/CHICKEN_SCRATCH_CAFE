@@ -3,6 +3,17 @@
 
 * {
     color: rgb(248, 248, 241); 
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+.sm-12 {
+    width:100%;
 }
 
 h1,
@@ -28,42 +39,73 @@ h2 {
     font-size: 18px;
 }
 
+.main--container,
+.sub--pg {
+    background-image: linear-gradient(to bottom right, olivedrab, rgb(149, 209, 8));
+}
+
+h1 {
+    color: yellow;
+}
 
 /*----- Nav & Links -----*/
 
-#li-nav > a,
-ul.li--contact >li > a,
-.home {
-    padding: 10px 15px;
+button#btn-burg {
+    background:none;
+    border:none;
+    color:rgb(248, 248, 241);
+    font-size: 2.4rem;
+    cursor: pointer;
+    padding: 5px 35px 5px 3vw;
+}
+
+nav {
+    background-color:rgb(231, 132, 52);
+}
+
+nav > div.nav-container > ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+nav > div.nav-container > ul > li {
+    list-style-type: none;
+}
+
+nav > div.nav-container > ul > li > a {
+    display: block;
+    padding: .4rem 0;
+    color:rgb(248, 248, 241);
+    text-align: center;
     text-decoration: none;
 }
 
-
-#li-nav > a {
-    font-size: 1.2em;
-    opacity: solid;
+nav > div.nav-container > ul > li.active {
+    background-color: rgb(94, 92, 93);
 }
 
-.nav--container {
-background:#0f0d0d;
-opacity: 80%;
-margin-top: 5px;
-padding: 10px;
+nav a:hover {
+    background-color:rgb(233, 72, 8);
 }
 
-#li-nav a:hover,
+nav > div.nav-container > ul.open {
+    display: block;
+}
+
+nav > div.nav-container > ul {
+    display: none;
+}
+
 a.home a:hover, 
 ul.li--contact >li > a:hover {
-    color:rgb(238, 149, 90);
+    color:rgb(233, 72, 8);
 } 
 
-ul.li--contact >li > a {
-    font-size: 1.5em;
-}
+ul.li--contact > li > a,
+.home >a {
+    text-decoration: none;
+    }
 
-ul.li--contact >li {
-    list-style: none;
-}
 
 
 /*----- Pages -----*/
@@ -71,14 +113,10 @@ ul.li--contact >li {
 
 /*- Main -*/
 
-.main--container,
-.sub--pg {
-    background-image: linear-gradient(to bottom right, olivedrab, rgb(149, 209, 8));
-}
 
-.main--container {
-    padding: 20px;
-}
+/* .main--container {
+    padding: .3em;
+} */
 
 
 .div--schedule,
@@ -138,14 +176,19 @@ hr {
 
 /*- Footer -*/
 
-footer, 
-p.footer-info {
+footer {
     background-color: rgb(150, 221, 68);
+    color:rgb(39, 39, 39);
+}
+
+.footer-info {
     width: 100%;
     padding: 8px 10px;
-    /* margin: .5em; */
-    color:rgb(87, 84, 86);
     text-align: center;
+}
+
+.addy > hr {
+    width: 120px;
 }
 
 /*----- Buttons -----*/
@@ -203,31 +246,31 @@ button:hover,
 /*- Main Pg -*/
 
 .schedule-pic {
-    max-width: 30em;
-    max-height: 30em;
+    max-width: 18em;
+    max-height: 18em;
 }
 
 .cafe-pic {
-    max-width: 30em;
-    max-height: 30em;
+    max-width: 18em;
+    max-height: 18em;
 }
 
 /*- Chick Pics -*/
 
 .chicken--pic {
     display:grid;
-    height: 30em;
-    width: 25em;
+    height: 18em;
+    width: 12em;
     
 }
 
 .overlay {
-    position:absolute;
-    bottom: 0;
+    /* position:initial; */
+    bottom: bottom;
     background: rgb(0, 0, 0);
     background: rgba(0, 0, 0, 0.5); /* Transparent effect. */
     color: #f1f1f1;
-    width: 19.5em;
+    width: 10.8em;
     transition: .5s ease;
     opacity:0;
     color: white;
@@ -268,16 +311,12 @@ bottom of the pic instead of the middle.*/
 }
 
 
-/*-- All --*/
 
-body {
-    display: grid;
-}
 
 /*-- Nav --*/
 
 /*--- Burg Nav ---*/
-/* @media (max-width: 768px) {
+/* {
     .nav {
         overflow: hidden;
         background-color: rgb(85, 80, 85);
@@ -313,13 +352,13 @@ body {
 
 /*-- Main --*/
 
-header,
+/* header,
 footer, 
 .main,
 .main--contact {
     grid-column-start: 1;
     grid-column-end: 5;
-}
+} */
 
 
 .menu {
@@ -327,23 +366,11 @@ footer,
     grid-column-end: 5;
 } 
 
-.div--schedule {
-    grid-column-start: 1;
-    grid-column-end: 3;
-}
 
-.div--cafe {
-    grid-column-start: 3;
-    grid-column-end: 5;
-}
-
-
-align-content: center;
-
-form {
+/* form {
     grid-column-start: 1;
     grid-column-end: 4;
-}
+} */
 
 /*-- Images --*/
 .hero--image {
@@ -364,13 +391,6 @@ form {
     display: grid;
     justify-items: center;
     align-items: center;
-    /* justify-content: center;
-    align-content: center; */
-    /* text-align: center;*/
-    /* top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); */
-    /* font-size: calc(21px + 1vw); */
 }
 
 .promo {
@@ -379,18 +399,3 @@ form {
     align-items: center;
 }
 
-/*-- Media Queries --*/
-
-/* 
-1. Have the schedule & cafe divs on the main pge go from 1 to 2 cols @ bigger sized screens.
-2. Have the nav go from collapsed to spread across the screen @ bigger screen sizes.
-3. Have the schedule divs go from 1 to 2 cols @ larger screens. 
-
-/* @media only screen 
-and (min-device-width : 320px) 
-and (max-device-width : 480px) {
-.div--schedule,
-.div--cafe {
-    grid-column-start: 1;
-    grid-column-end: 3;
-} */

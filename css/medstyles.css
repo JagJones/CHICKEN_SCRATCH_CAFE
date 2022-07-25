@@ -1,0 +1,44 @@
+@media only screen and (min-width : 768px) {
+
+    body {
+        display: grid;
+    }
+
+    .md-6 {
+        width:50%;
+    }
+
+
+    h1 {
+        color: orange;
+    }
+
+/*----- Nav -----*/
+
+#btn-burg {
+    display: none;
+}
+
+nav > div.nav-container > ul {
+    display: block;
+}
+
+nav > div.nav-container > ul > li {
+    float: left;
+    width: 25%;
+}
+
+/*----- Images -----*/
+
+    .schedule-pic {
+        max-width: 20em;
+        max-height: 20em;
+    }
+    
+    .cafe-pic {
+        max-width: 20em;
+        max-height: 20em;
+    }
+
+
+} /*- End of media query -*/

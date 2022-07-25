@@ -1,5 +1,3 @@
-<!-- Look into how to make these elements more defined for accessibility.-->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,17 +14,19 @@
 <body class="index">
 
     <header>
-        <div class="nav--container">
-            <nav>
-                <div id="li-nav">
-                    <a href="index.html">Home</a>
-                    <a href="about.html">About</a>
-                    <a href="schedule.html">Schedule</a>
-                    <a href="menu.html">Cafe</a>
-                    <a href="#footer">Contact</a>
-                </div>
-            </nav>
-        </div>
+        <nav class="clearfix">
+            <div class="nav-container">
+            <button id="btn-burg">&#9776</button>
+                <ul id="navCtrl">
+                    <li class="active"><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="schedule.html">Schedule</a></li>
+                    <li><a href="menu.html">Cafe</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        
         <div class="hero--image">
             <div class="hero--content"></div>
                     <h1 class="hero--text">Chicken Scratch Cafe</h1>
@@ -34,7 +34,7 @@
         </div>
     </header>
 
-    <div class="main--container">
+    <div class="main--container sm-12 md-6 lrg-3">
         <main class="main" ><h2 id="main--about">Welcome to the Chicken Scratch Cafe!</h2>
         I still dream of Orgonon. I wake up crying. You're making rain. And you're just in reach. When you and sleep escape me. You're like my yo-yo. That glowed in the dark. 
         What made it special. Made it dangerous. So I bury it. And forget.
@@ -42,7 +42,7 @@
         On top of the world, looking over the edge. You could see them coming. You looked too small. In their big black car. To be a threat to the men in power.
         </main>
 
-        <div class="div--schedule">
+        <div class="div--schedule sm-12 md-6 lrg-6">
             <h2 id="main--schedule">Spend Some Time With Our Chickens</h2>
             <img class="schedule-pic" src="/images/pexels-jackerkun-10428837.jpg" alt="Kid with chickens.">
             <p>Out on the wiley, windy moors. We'd roll and fall in green. You had a temper like my jealousy
@@ -51,7 +51,7 @@
                     <button class="btn--schedule"><a href="schedule.html">Schedule Here</a></button>
         </div>
 
-        <div class="div--cafe">
+        <div class="div--cafe sm-12 md-6 lrg-6">
             <h2 id="main-cafe">Visit Our Cafe</h2>
             <img class="cafe-pic" src="/images/pexels-karolina-grabowska-5427255.jpg" alt="Hands holding a latte.">
             <p>Dreams in the night. They told me I was going to lose the fight. 
@@ -59,21 +59,44 @@
                 <br>
                     <button class="btn--menu"><a href="menu.html">Go to Cafe</a></button>
         </div>
-
-        <div class="main--contact"><h2 class="h--contact">Get In Touch</h2>
-            <!-- Removed the contact pg. Want a list of banners for each contact section which spans 95% of the pg. -->
-            <!-- Give a general local for Iroquois Park.-->
-            <!-- Add icons for the following using that SVG plugin.-->
-            <ul class="li--contact">
-                <li><a href="chicken.scratch@gmail.com">Email</a></li>
-                <li><a href="@chicken_scratch_cafe">Twitter</a></li>
-                <li><a href="@chicken_scratch_cafe">Instagram</a></li>
-            </ul>
-        </div>
     </div>
 
-    <footer id="footer">
-        <p class="footer-info">Louisville, Ky &copy;2022 - Chicken Scratch Cafe</p>
+    <footer id="footer" class="clearfix">
+        <div class="footer-info">
+            <section class="addy sm-12 md-6 lrg-3"><h4>Louisville Location:</h4>
+                <address>5216 New Cut Rd,
+                    <br>
+                    Lousiville, KY 40214
+                </address>
+                <phone>502-000-0000</phone>
+            </section>
+            <section class="addy sm-12 md-6 lrg-3"><h4>Indianapolis Location:</h4> 
+                <address>6363 Spring Mill Rd,
+                    <br>
+                    Indianapolis, IN 46260
+                </address>
+                <phone>502-000-0000</phone>
+            </section>
+            <section class="addy sm-12 md-6 lrg-3"><h4>Lexington Location:</h4>
+                <address>4001 Athens Boonesboro Rd, 
+                    <br>
+                    Lexington, KY 40509
+                </address>
+                <phone>502-000-0000</phone>
+                
+            </section>
+            <hr>
+            <section class="social sm-12 md-6 lrg-3">
+                <h4>Social</h4>
+                <ul class="li--contact">
+                    <li><a href="chicken.scratch@gmail.com">Email</a></li>
+                    <li><a href="@chicken_scratch_cafe">Twitter</a></li>
+                    <li><a href="@chicken_scratch_cafe">Instagram</a></li>
+                </ul>
+            </section>
+
+            <p>Louisville, Ky &copy;2022 - Chicken Scratch Cafe</p>
+        </div>
     </footer>
 
 <script src='/javascript/main.js'></script>
