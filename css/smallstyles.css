@@ -24,6 +24,7 @@ body {
 
 .sm-12 {
     width:100%;
+    /* height: 100%; */
 }
 
 h1,
@@ -54,6 +55,12 @@ h2 {
     background-image: linear-gradient(to bottom right, olivedrab, rgb(149, 209, 8));
 }
 
+.main--container {
+    display: grid;
+    width:100%;
+    height:100%;
+}
+
 /* Testing media queries. 
 
 /* h1 {
@@ -66,9 +73,10 @@ button#btn-burg {
     background:none;
     border:none;
     color:rgb(248, 248, 241);
-    font-size: 2.4rem;
+    font-size: 2rem;
+    font-weight: 5;
     cursor: pointer;
-    padding: 5px 20px 5px 2vw;
+    padding: 10px 10px 0px 2vw;
 }
 
 nav {
@@ -97,7 +105,7 @@ nav > div.nav-container > ul > li.active {
 }
 
 nav a:hover {
-    background-color:rgb(233, 72, 8);
+    background-color:rgb(0, 0, 0, 0.2);
 }
 
 nav > div.nav-container > ul.open {
@@ -126,32 +134,41 @@ a.home > a {
 
 /*- Main -*/
 
-/* .main--container,
-footer {
-    width: 100%;
-} */
+.div--main {
+    margin-left: 5rem;
+    margin-right: 5rem;
+    text-align: center;
+}
 
 .div--schedule,
 .div--cafe {
     border-style: solid;
     border-width: 1px;
-    margin: 12px;
+    margin: 1rem;
     padding: 18px;
     grid-column-start: auto;
 }
 
-div > h2.main--schedule,
-div > h2.main--cafe {
+.div--cafe > p,
+.div--schedule > p
+{
     text-align: center;
 }
 
-h4 {
-    margin: 0;
-    padding: 20px 0px 5px 0px;
+#main--cafe,
+#main--schedule {
+    text-align: center;
 }
 
-footer {
-    color:rgba(0, 0, 0, 0.5);
+#main--schedule,
+.schedule-pic
+#main--cafe,
+.cafe-pic {
+    margin-left: 5em;
+}
+
+#main--schedule {
+    text-align: center;
 }
 
 /*- Scheduling -*/
@@ -171,32 +188,28 @@ label {
 }
 
 input {
+    margin-bottom: 8px;
     background:rgb(248, 248, 241);
     color:rgba(0, 0, 0, 0.5);
 }
 
-label,
-small {
+label {
     background: none;
 }
 
+small {
+    background-color: rgb(121, 167, 14);
+}
+
+
 hr {
-    width: 20em;
+    width: 300px;
+    border: 1px solid whitesmoke;
 }
 
 .promo {
     align-content: center;
-}
-
-#main--schedule,
-.schedule-pic
-#main--cafe,
-.cafe-pic {
-    margin-left: 5em;
-}
-
-#main--schedule {
-    text-align: center;
+    margin:2rem;
 }
 
 
@@ -222,8 +235,11 @@ footer {
 }
 
 .footer-info > section.social > ul.li--contact {
-    text-decoration: none;
+    list-style: none;
 }
+
+
+/*- HR -*/
 
 .footer-info > hr.addy-hr {
     width: 10px;
@@ -233,12 +249,15 @@ footer {
 
 }
 
-.footer-info > hr {
-    width: 300px;
+.footer-info > hr,
+.div--main > hr {
+    width: 150px;
     border: 1px solid whitesmoke;
 }
 
-
+.div--main > hr {
+    margin-bottom: 25px;
+}
 
 /*----- Buttons -----*/
 
@@ -270,7 +289,7 @@ button:hover,
 
 .btn--menu,
 .btn--schedule {
-    margin-left: 10em;
+    margin-left: 9rem;
 }
 
 
@@ -288,18 +307,22 @@ button:hover,
     background-size: cover;
 }
 
+.hero--image {
+    height: calc(375px + 35vw);
+}
 
 .hero--text {
     background: none;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    margin-left: 3rem;
 }
+
 
 /*- Main Pg -*/
 
-.schedule-pic {
-    max-width: 18em;
-    max-height: 18em;
-}
-
+.schedule-pic,
 .cafe-pic {
     max-width: 18em;
     max-height: 18em;
@@ -339,6 +362,7 @@ button:hover,
 /* Make sure the overlay resizes with the pics & try to get it on the 
 bottom of the pic instead of the middle.*/
 
+small,
 .promo-pic,
 .schedule-pic,
 .cafe-pic,
@@ -347,10 +371,16 @@ bottom of the pic instead of the middle.*/
     text-align: center;
 }
 
-.promo-pic {
-    max-width: 55em;
-    max-height: 55em;
+.promo {
+    display: grid;
+    justify-items: center;
+    align-items: center;
 }
+
+.promo-pic {
+    height: calc(65px + 40vw)
+}
+
 
 #menu--pic {
     max-width: 65em;
@@ -359,59 +389,3 @@ bottom of the pic instead of the middle.*/
     border-style: solid;
     border-width: 1px;
 }
-
-
-
-
-/*-- Nav --*/
-
-
-/*-- Main --*/
-
-/* header,
-footer, 
-.main,
-.main--contact {
-    grid-column-start: 1;
-    grid-column-end: 5;
-} */
-
-
-.menu {
-    grid-column-start: 1;
-    grid-column-end: 5;
-} 
-
-
-/* form {
-    grid-column-start: 1;
-    grid-column-end: 4;
-} */
-
-/*-- Images --*/
-.hero--image {
-    height: calc(500px + 35vw);
-}
-
-/* .hero--content {
-	margin-left: calc(40px + 4vw);
-	margin-bottom: calc(60px + 3vw);
-	/* make this a grid container as well */
-	/* display: grid;
-	justify-items:center;
-    align-items: center; */
-	/* grid-gap: calc(22px + 1vw);
-}  */
-
-.hero--text {
-    display: grid;
-    justify-items: center;
-    align-items: center;
-}
-
-.promo {
-    display: grid;
-    justify-items: center;
-    align-items: center;
-}
-
