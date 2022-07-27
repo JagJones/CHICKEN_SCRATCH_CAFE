@@ -68,11 +68,11 @@ button#btn-burg {
     color:rgb(248, 248, 241);
     font-size: 2.4rem;
     cursor: pointer;
-    padding: 10px 20px 0px 2vw;
+    padding: 5px 20px 5px 2vw;
 }
 
 nav {
-    background-color:rgb(231, 132, 52);
+    background-color:rgb(150, 221, 68);
 }
 
 nav > div.nav-container > ul {
@@ -108,17 +108,18 @@ nav > div.nav-container > ul {
     display: none;
 }
 
-a.home a:hover, 
-ul.li--contact >li > a:hover {
+.li-home a:hover, 
+.footer-info > section.social > ul.li-contact > li > a:hover {
     color:rgb(233, 72, 8);
 } 
 
-section > ul.li--contact > li > a,
-.home > a {
-    list-style: none;
+section > ul.li--contact > li > a {
+    text-decoration: none;
     }
 
-
+a.home > a {
+    font-size: 4rem;
+}
 
 /*----- Pages -----*/
 
@@ -150,7 +151,7 @@ h4 {
 }
 
 footer {
-    width:100%;
+    color:rgba(0, 0, 0, 0.5);
 }
 
 /*- Scheduling -*/
@@ -203,7 +204,6 @@ hr {
 
 footer {
     background-color: rgb(150, 221, 68);
-    color:rgb(39, 39, 39);
 }
 
 .footer-info {
@@ -212,9 +212,33 @@ footer {
     text-align: center;
 }
 
-.addy > hr {
-    width: 120px;
+.footer-info > p,
+.footer-info > section.addy > h4,
+.footer-info > section.addy > address,
+.footer-info > section.addy > phone,
+.footer-info > section.social > h4,
+.footer-info > section.social > ul.li-contact > li > a {
+    color:rgb(48, 46, 47);
 }
+
+.footer-info > section.social > ul.li--contact {
+    text-decoration: none;
+}
+
+.footer-info > hr.addy-hr {
+    width: 10px;
+    margin-top: 15px;
+    margin-bottom: 0;
+    border: 1px solid orangered;
+
+}
+
+.footer-info > hr {
+    width: 300px;
+    border: 1px solid whitesmoke;
+}
+
+
 
 /*----- Buttons -----*/
 
