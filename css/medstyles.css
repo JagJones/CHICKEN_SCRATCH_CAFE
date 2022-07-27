@@ -1,21 +1,23 @@
 @media only screen and (min-width : 768px) {
 
-    body {
+    /* body {
         display: grid;
     }
 
     .md-6 {
         width:50%;
-    }
+    } */
 
 
-    h1 {
+    /* Media query test.
+    
+    /* h1 {
         color: orange;
-    }
+    } */
 
 /*----- Nav -----*/
 
-#btn-burg {
+/* #btn-burg {
     display: none;
 }
 
@@ -26,11 +28,11 @@ nav > div.nav-container > ul {
 nav > div.nav-container > ul > li {
     float: left;
     width: 25%;
-}
+} */
 
 /*----- Images -----*/
 
-    .schedule-pic {
+    /* .schedule-pic {
         max-width: 20em;
         max-height: 20em;
     }
@@ -38,7 +40,7 @@ nav > div.nav-container > ul > li {
     .cafe-pic {
         max-width: 20em;
         max-height: 20em;
-    }
+    } */
 
 
 } /*- End of media query -*/
