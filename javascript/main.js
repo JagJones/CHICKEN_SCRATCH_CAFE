@@ -5,7 +5,7 @@
 function collapseNav (){
     document.getElementById("navCtrl").classList.toggle("open");
 }
-let n = document.getElementById('btn-burg');
+let n = document.getElementById('btn--burg');
 n.onclick = collapseNav;
 
 

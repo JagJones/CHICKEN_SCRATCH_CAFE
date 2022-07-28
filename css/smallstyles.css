@@ -57,8 +57,7 @@ h2 {
 
 .main--container {
     display: grid;
-    width:100%;
-    height:100%;
+    width: 100%;
 }
 
 /* Testing media queries. 
@@ -69,7 +68,7 @@ h2 {
 
 /*----- Nav & Links -----*/
 
-button#btn-burg {
+button#btn--burg {
     background:none;
     border:none;
     color:rgb(248, 248, 241);
@@ -83,16 +82,16 @@ nav {
     background-color:rgb(150, 221, 68);
 }
 
-nav > div.nav-container > ul {
+nav > div.nav--container > ul {
     margin: 0px;
     padding: 0px;
 }
 
-nav > div.nav-container > ul > li {
+nav > div.nav--container > ul > li {
     list-style-type: none;
 }
 
-nav > div.nav-container > ul > li > a {
+nav > div.nav--container > ul > li > a {
     display: block;
     padding: 1rem 0;
     color:rgb(248, 248, 241);
@@ -100,7 +99,7 @@ nav > div.nav-container > ul > li > a {
     text-decoration: none;
 }
 
-nav > div.nav-container > ul > li.active {
+nav > div.nav--container > ul > li.active {
     background-color: rgb(94, 92, 93);
 }
 
@@ -108,16 +107,17 @@ nav a:hover {
     background-color:rgb(0, 0, 0, 0.2);
 }
 
-nav > div.nav-container > ul.open {
+nav > div.nav--container > ul.open {
     display: block;
 }
 
-nav > div.nav-container > ul {
+nav > div.nav--container > ul {
     display: none;
 }
 
-.li-home a:hover, 
-.footer-info > section.social > ul.li-contact > li > a:hover {
+#home a:hover, 
+.li--home a:hover, 
+.footer--info > section.social > ul.li--contact > li > a:hover {
     color:rgb(233, 72, 8);
 } 
 
@@ -125,8 +125,13 @@ section > ul.li--contact > li > a {
     text-decoration: none;
     }
 
-a.home > a {
-    font-size: 4rem;
+section > ul.li--contact > li {
+    margin: 0;
+}
+
+#home {
+    font-size: 2rem;
+    text-align: center;
 }
 
 /*----- Pages -----*/
@@ -150,8 +155,7 @@ a.home > a {
 }
 
 .div--cafe > p,
-.div--schedule > p
-{
+.div--schedule > p {
     text-align: center;
 }
 
@@ -161,14 +165,15 @@ a.home > a {
 }
 
 #main--schedule,
-.schedule-pic
+.schedule--pic
 #main--cafe,
-.cafe-pic {
+.cafe--pic {
     margin-left: 5em;
 }
 
 #main--schedule {
-    text-align: center;
+    margin:0;
+    justify-items: center;
 }
 
 /*- Scheduling -*/
@@ -219,29 +224,32 @@ footer {
     background-color: rgb(150, 221, 68);
 }
 
-.footer-info {
+.footer--info {
     width: 100%;
     padding: 8px 10px;
     text-align: center;
 }
 
-.footer-info > p,
-.footer-info > section.addy > h4,
-.footer-info > section.addy > address,
-.footer-info > section.addy > phone,
-.footer-info > section.social > h4,
-.footer-info > section.social > ul.li-contact > li > a {
+.footer--info > p,
+.footer--info > section.addy > h4,
+.footer--info > section.addy > address,
+.footer--info > section.addy > phone,
+.footer--info > section.social > h4,
+.footer--info > section.social > ul.li--contact > li > a {
     color:rgb(48, 46, 47);
 }
 
-.footer-info > section.social > ul.li--contact {
+.footer--info > section.social > ul.li--contact {
     list-style: none;
 }
 
+.footer--info > p {
+    font-size: 15px;
+}
 
-/*- HR -*/
+/*- hr -*/
 
-.footer-info > hr.addy-hr {
+.footer--info > hr.addy--hr {
     width: 10px;
     margin-top: 15px;
     margin-bottom: 0;
@@ -249,7 +257,7 @@ footer {
 
 }
 
-.footer-info > hr,
+.footer--info > hr,
 .div--main > hr {
     width: 150px;
     border: 1px solid whitesmoke;
@@ -315,15 +323,15 @@ button:hover,
     background: none;
     display: grid;
     justify-items: center;
-    align-items: center;
     margin-left: 3rem;
+    margin-top:1em;
 }
 
 
 /*- Main Pg -*/
 
-.schedule-pic,
-.cafe-pic {
+.schedule--pic,
+.cafe--pic {
     max-width: 18em;
     max-height: 18em;
 }
@@ -363,12 +371,13 @@ button:hover,
 bottom of the pic instead of the middle.*/
 
 small,
-.promo-pic,
-.schedule-pic,
-.cafe-pic,
+.promo--pic,
+.schedule--pic,
+.cafe--pic,
 .chicken--pic {
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
-    text-align: center;
+    margin:0;
+    justify-items: center;
 }
 
 .promo {
@@ -377,7 +386,7 @@ small,
     align-items: center;
 }
 
-.promo-pic {
+.promo--pic {
     height: calc(65px + 40vw)
 }
 

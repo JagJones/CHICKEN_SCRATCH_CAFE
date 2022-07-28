@@ -1,9 +1,5 @@
 @media only screen and (min-width : 1024px) {
 
-    /* .lrg-3 {
-        width:25%;
-    }
-
     h1 { 
         font-size: 8em; 
         line-height: 26.4px; 
@@ -12,7 +8,7 @@
     h2 { 
         font-size: 3em; 
         line-height: 15.4px; 
-    } */
+    }
 
 
     /* Media query test.
@@ -22,10 +18,6 @@
     } */
 
 /*----- Nav & Links -----*/
-
-/* .lrg-3 {
-    width:25%;
-}
 
     nav > div.nav-container > ul >li {
         width: auto;
@@ -41,35 +33,24 @@
 
     ul.li--contact >li {
         list-style: none;
-    } */
+    }
 
 
 /*----- Pages -----*/
 
 /*- Main -*/
 
-    /* .main--container {
-    padding: 1.5em;
-    } */
-
-.div--schedule {
-    grid-column-start: 1;
-    grid-column-end: 6;
+.sub--container {
+    display: grid;
+    grid-template-columns: auto auto;
 }
 
-.div--cafe {
-    grid-column-start: 7;
-    grid-column-end: 12;
+.div--schedule > h2#main--schedule,
+.div--cafe > h2#main--cafe {
+    font-size: 2em; 
+    line-height: 1.8rem;
 }
 
-/*
-.div--schedule,
-.div--cafe {
-    border-style: solid;
-    border-width: 1px;
-    margin: 15px 20px;
-    padding: 20px 15px;
-} */
 
 /*- Schedule -*/
 
@@ -79,18 +60,32 @@ form {
 }
 
 
+/*- About -*/
+
+.about {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.about--health {
+    
+}
+
+
+/*----- Buttons -----*/
+
+
+
+
 /*----- Images -----*/
 
 /*- Main -*/
-/* .schedule-pic {
-    max-width: 30em;
-    max-height: 30em;
+.schedule--pic,
+.cafe--pic {
+    max-width: 20em;
+    max-height: 20em;
 }
 
-.cafe-pic {
-    max-width: 30em;
-    max-height: 30em;
-} */
 
 /*- About -*/
 
