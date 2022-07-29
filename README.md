@@ -28,22 +28,22 @@ The Chicken Scratch Cafe is a fictional business (though it's real in my heart) 
     - Mobile, 768px and 1024px.
 
 ### Function & Aesthetics Goals: ###
-**. Main Pg**
+* Main Pg
 - Navigation menu is collapsable at all screens. 
 *(As of 7/28 there were issues getting the navigation bar to not hide completely when setting the button display to 'none'.)*
 - Use CSS grid to go from 1 column in the footer and main content divs on smaller screens to 2 columns for the divs and two columns at <768px then 4 columns at <1024pxfor the footer.
 
-**. About Pg**
+* About Pg
 - Use CSS grid to go from 1 column on small screens, then 3 columns on larger screens.
 - Use CSS to create an animation which shows each chicken's name across their image.
 *(As of 7/28 the banner is not in the location it was intended to be in and pops up when the cursor is anywhere near the pic instead on only when it's on the pic.)*
 
-**. Scheduling Pg**
+* Scheduling Pg
 - Use HTML to create a form which the user can fill out. 
 - Use JavaScript to return the information that was entered to confirm that it's correct/ not null.
 (*As of 7/25 I can only get this to work for the name field and it only confirms that the field isn't blank on the first try.)*
 
-**. Menu Pg** 
+* Menu Pg
 - It was originally created as filler since you can't have a cafe without a menu. It's just CSS practice.
 *(As of 7/28 the menu pg is nothing fancy.)*
 
