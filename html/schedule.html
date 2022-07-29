@@ -12,7 +12,7 @@
         <title>Chicken Scratch Cafe</title>
     </head>
 
-<body class="sub--pg sm-12 md-6 lrg-3">
+<body class="sub--pg sm-12 lrg-3">
 
     <header>
         <nav class="clearfix">
@@ -29,27 +29,34 @@
         </nav>
     </header>
 
-    <div">
+    <div>
         <form>
-            <label for="name">Name:</label><br>
+            <label for="name">Name:</label>
+            <br>
             <input type="text" name="name" id="name">
             <br><br>
 
-            <label for="email">Email:</label><br>
+            <label for="email">Email:</label>
+            <br>
             <input type="email" name="email" id="email">
             <br><br>
 
-            <label for="start-date">Select Your Date:</label><br>
+            <label for="start-date">Select Your Date:</label>
+            <br>
             <input type="date" id="date" name="date" value="yyyy-mm-dd" min="2022-07-01">
             <br><br>
 
-            <label for="start-time">Select Your Time of Arrival:</label><br>
-            <input type="time" id="time" name="time" min="09:00" max="18:00" required><br>
+            <label for="start-time">Arrival Time:</label>
+            <br>
+            <input type="time" id="time" name="time" min="09:00" max="18:00" required>
+            <br>
             <small>Cafe hours are 9am to 6pm - Thursday thru Sunday.</small>
             <br><br>
 
-            <label id="people" for="people">Number of Guests:</label><br>
+            <label id="people" for="people">Number of Guests:</label>
+            <br>
             <input type="number" id="numGuests" name="numGuests" value="numGuests" min="1">
+            <br>
             <small>Groups of 8+ guests will require additional information via email.</small>
             <br><br>
 

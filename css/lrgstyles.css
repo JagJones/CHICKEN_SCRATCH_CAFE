@@ -1,5 +1,7 @@
 @media only screen and (min-width : 1024px) {
 
+
+
     h1 { 
         font-size: 8em; 
         line-height: 26.4px; 
@@ -13,25 +15,25 @@
 
     /* Media query test.
     
-    /* h1 {
+    h1 {
         color: red;
     } */
 
 /*----- Nav & Links -----*/
 
-    nav > div.nav-container > ul >li {
+    nav > .nav-container > ul >li {
         width: auto;
     }
 
-    nav > div.nav-container > ul >li a {
+    nav > .nav-container > ul >li a {
         padding: .7rem 2rem;
     }
 
-    ul.li--contact >li > a {
+    .li--contact >li > a {
         font-size: 1.5em;
     }
 
-    ul.li--contact >li {
+    .li--contact >li {
         list-style: none;
     }
 
@@ -45,10 +47,20 @@
     grid-template-columns: auto auto;
 }
 
-.div--schedule > h2#main--schedule,
-.div--cafe > h2#main--cafe {
+.div--schedule > #main--schedule,
+.div--cafe > #main--cafe {
     font-size: 2em; 
     line-height: 1.8rem;
+}
+
+.color--block {
+    background:#F3F979;
+    width:400px;
+    height:350px;
+    transform: skew(20deg);
+    position:relative;
+    bottom:200px;
+    left:80px;
 }
 
 
@@ -57,6 +69,11 @@
 form {
     grid-column-start: 1;
     grid-column-end: 4;
+}
+
+input {
+    margin-bottom: 12px;
+    margin-top: 6px;
 }
 
 
@@ -72,6 +89,15 @@ form {
 }
 
 
+/*----- Footer -----*/
+
+.footer--info > .addy,
+.footer--info > .social {
+    display: grid;
+    grid-template-columns: auto;
+}
+
+
 /*----- Buttons -----*/
 
 
@@ -80,6 +106,9 @@ form {
 /*----- Images -----*/
 
 /*- Main -*/
+
+
+
 .schedule--pic,
 .cafe--pic {
     max-width: 20em;
@@ -100,4 +129,4 @@ form {
 
 
 
-} - End of media query -
+} /* End of media query. */

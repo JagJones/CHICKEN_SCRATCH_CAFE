@@ -52,7 +52,7 @@ h2 {
 
 .main--container,
 .sub--pg {
-    background-image: linear-gradient(to bottom right, olivedrab, rgb(149, 209, 8));
+    background-image: linear-gradient(to bottom right, #67820D, rgb(149, 209, 8));
 }
 
 .main--container {
@@ -79,7 +79,7 @@ button#btn--burg {
 }
 
 nav {
-    background-color:rgb(150, 221, 68);
+    background-color:#D8E022;
 }
 
 nav > div.nav--container > ul {
@@ -105,6 +105,8 @@ nav > div.nav--container > ul > li.active {
 
 nav a:hover {
     background-color:rgb(0, 0, 0, 0.2);
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+
 }
 
 nav > div.nav--container > ul.open {
@@ -116,21 +118,17 @@ nav > div.nav--container > ul {
 }
 
 #home a:hover, 
-.li--home a:hover, 
-.footer--info > section.social > ul.li--contact > li > a:hover {
+.footer--info > .social > .li--contact > li > a:hover {
     color:rgb(233, 72, 8);
 } 
 
-section > ul.li--contact > li > a {
+section > .li--contact > li > a {
     text-decoration: none;
     }
 
-section > ul.li--contact > li {
-    margin: 0;
-}
 
 #home {
-    font-size: 2rem;
+    font-size: 25px;
     text-align: center;
 }
 
@@ -164,17 +162,14 @@ section > ul.li--contact > li {
     text-align: center;
 }
 
-#main--schedule,
-.schedule--pic
-#main--cafe,
-.cafe--pic {
-    margin-left: 5em;
-}
 
+#main--cafe,
 #main--schedule {
     margin:0;
-    justify-items: center;
+    margin-top: 45px;
+    margin-bottom:30px;
 }
+
 
 /*- Scheduling -*/
 
@@ -193,17 +188,25 @@ label {
 }
 
 input {
-    margin-bottom: 8px;
-    background:rgb(248, 248, 241);
-    color:rgba(0, 0, 0, 0.5);
+    margin-bottom: 6px;
+    margin-top: 3px;
+    background:none;
+    color:black;
+    border: 2px solid whitesmoke;
+    border-radius: 4px;
 }
 
 label {
     background: none;
+    font-family: Aubrey; 
+    font-style: normal; 
+    font-variant: normal; 
+    font-size: 25px;
+    font-weight: 500;
 }
 
 small {
-    background-color: rgb(121, 167, 14);
+    background-color: none;
 }
 
 
@@ -218,10 +221,13 @@ hr {
 }
 
 
+/*- About -*/
+
+
 /*- Footer -*/
 
 footer {
-    background-color: rgb(150, 221, 68);
+    background-color: #D8E022;
 }
 
 .footer--info {
@@ -231,15 +237,25 @@ footer {
 }
 
 .footer--info > p,
-.footer--info > section.addy > h4,
-.footer--info > section.addy > address,
-.footer--info > section.addy > phone,
-.footer--info > section.social > h4,
-.footer--info > section.social > ul.li--contact > li > a {
+.footer--info > .social > h4,
+.footer--info > .addy > h4 {
+    font-family: Aubrey; 
+    font-style: normal; 
+    font-variant: normal; 
+    font-size: 20px;
+    font-weight: 850;
+}
+
+.footer--info > p,
+.footer--info > .addy > h4,
+.footer--info > .addy > address,
+.footer--info > .addy > phone,
+.footer--info > .social > h4,
+.footer--info > .social > .li--contact > li > a {
     color:rgb(48, 46, 47);
 }
 
-.footer--info > section.social > ul.li--contact {
+.footer--info > .social > .li--contact {
     list-style: none;
 }
 
@@ -249,7 +265,8 @@ footer {
 
 /*- hr -*/
 
-.footer--info > hr.addy--hr {
+.footer--info > hr,
+.footer--info > .addy--hr {
     width: 10px;
     margin-top: 15px;
     margin-bottom: 0;
@@ -257,14 +274,10 @@ footer {
 
 }
 
-.footer--info > hr,
 .div--main > hr {
     width: 150px;
     border: 1px solid whitesmoke;
-}
-
-.div--main > hr {
-    margin-bottom: 25px;
+    margin-bottom: 25px
 }
 
 /*----- Buttons -----*/
@@ -273,7 +286,7 @@ button,
 #submit, 
 .btn--schedule, 
 .btn--menu {
-    background-color: rgb(231, 132, 52);
+    background-color: #D8E022;
     border: none;
     border-radius: 8px;
     padding: 15px 32px;
@@ -288,16 +301,24 @@ button,
     color:rgb(48, 46, 47);
     font-size: 20px;
     font-weight: bolder;
+    font-family: Aubrey; 
+    font-style: normal; 
+    font-variant: normal; 
+    font-size: 20px;
+    font-weight: 850;
 }
 
 button:hover,
 #submit:hover {
-    background-color:rgb(233, 72, 8);
+    background-color:whitesmoke;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+
 }
 
 .btn--menu,
 .btn--schedule {
-    margin-left: 9rem;
+    /* margin-left: 9rem; */
+    align-content: center;
 }
 
 
@@ -316,7 +337,7 @@ button:hover,
 }
 
 .hero--image {
-    height: calc(375px + 35vw);
+    height: calc(275px + 35vw);
 }
 
 .hero--text {
@@ -334,6 +355,18 @@ button:hover,
 .cafe--pic {
     max-width: 18em;
     max-height: 18em;
+    position: absolute;
+}
+
+.color--block {
+    background:#F3F979;
+    width:300px;
+    height:250px;
+    transform: skew(20deg);
+    position:relative;
+    top: -15px;
+    left:55px;
+    margin:0;
 }
 
 /*- Chick Pics -*/
@@ -342,20 +375,18 @@ button:hover,
     display:grid;
     height: 18em;
     width: 12em;
-    
+    position:relative;
 }
 
 .overlay {
-    /* position:initial; */
-    bottom: bottom;
     background: rgb(0, 0, 0);
     background: rgba(0, 0, 0, 0.5); /* Transparent effect. */
-    color: #f1f1f1;
     width: 10.8em;
-    transition: .5s ease;
+    transition: .8s ease;
     opacity:0;
-    color: white;
+    color: white; 
     font-size: 20px;
+    font-weight: 600;
     padding: 5px;
     text-align: center;
 }
@@ -370,7 +401,6 @@ button:hover,
 /* Make sure the overlay resizes with the pics & try to get it on the 
 bottom of the pic instead of the middle.*/
 
-small,
 .promo--pic,
 .schedule--pic,
 .cafe--pic,
