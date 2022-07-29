@@ -2,6 +2,8 @@
 
 /* Allows for the nav to collapse into a burger nav on smaller  screens.*/
 
+console.log("Script linked!");
+
 function collapseNav (){
     document.getElementById("navCtrl").classList.toggle("open");
 }
