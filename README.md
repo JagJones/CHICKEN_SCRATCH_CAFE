@@ -21,19 +21,20 @@ The Chicken Scratch Cafe is a fictional business (though it's real in my heart) 
     - Validate the info.
     - Used to show and hide collapsible navigation menu.
 . Use CSS 3 Ways
-    - Target the nth of child using CSS.
     - Also used in the collapsible navigation menu.
+    - Created a banner animation which displays the chicken's names.
     - Primarily used CSS grid for media queries. 
 . Levels of media queries.
-    - Mobile and 1024px.
+    - Mobile, 768px and 1024px.
 
 ### Function & Aesthetics Goals: ###
 **. Main Pg**
-    - Navigation menu is collapsable at smaller screens then expands across the page at <1024px.
-    - Use CSS grid to go from 1 column on smaller screens to 2 columns at <1024px. 
+    - Navigation menu is collapsable at all screens. 
+    *(As of 7/28 there were issues getting the navigation bar to not hide completely when setting the button display to 'none'.)*
+    - Use CSS grid to go from 1 column in the footer and main content divs on smaller screens to 2 columns for the divs and two columns at <768px then 4 columns at <1024pxfor the footer. 
 **. About Pg**
     - Use CSS grid to go from 1 column on small screens, then 3 columns on larger screens.
-    - Use CSS to create a feature which shows each chicken's name across their image.
+    - Use CSS to create an animation which shows each chicken's name across their image.
     *(As of 7/28 the banner is not in the location it was intended to be in and pops up when the cursor is anywhere near the pic instead on only when it's on the pic.)*
 **. Scheduling Pg**
     - Use HTML to create a form which the user can fill out. 
@@ -45,10 +46,12 @@ The Chicken Scratch Cafe is a fictional business (though it's real in my heart) 
 
 
 ### Future Plans... ###
-There are some updates I hope to add after spening more time with this project. 
+There are some updates I hope to add after spending more time with this project. 
 
 - [ ] Have the form hold more user input and return all input via the alert. 
 - [ ] Validate at least 2 other fields in the form.
 - [ ] Tighten up the layout with CSS.
 - [ ] Get the chicken name banners in the correct places. 
 - [ ] Add CSS to have links change color after viewing a pg. *(Had this feature working previously but it was very fragile.)*
+- [ ] There's some shapes I want to add behind the images on each pg. As of 7/28 I could make the shapes and get them in the correct spot but couldn't get them behind the images. 
+- [ ] Need to resize all images. 

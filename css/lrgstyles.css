@@ -1,7 +1,5 @@
 @media only screen and (min-width : 1024px) {
 
-
-
     h1 { 
         font-size: 8em; 
         line-height: 26.4px; 
@@ -13,14 +11,14 @@
     }
 
 
-    /* Media query test.
+    /* Media query test.*/
     
-    h1 {
+    /* h1 {
         color: red;
     } */
 
 /*----- Nav & Links -----*/
-
+/* 
     nav > .nav-container > ul >li {
         width: auto;
     }
@@ -35,7 +33,7 @@
 
     .li--contact >li {
         list-style: none;
-    }
+    } */
 
 
 /*----- Pages -----*/
@@ -53,7 +51,7 @@
     line-height: 1.8rem;
 }
 
-.color--block {
+/* .color--block {
     background:#F3F979;
     width:400px;
     height:350px;
@@ -61,19 +59,14 @@
     position:relative;
     bottom:200px;
     left:80px;
-}
+} */
 
 
 /*- Schedule -*/
 
-form {
-    grid-column-start: 1;
-    grid-column-end: 4;
-}
-
-input {
-    margin-bottom: 12px;
-    margin-top: 6px;
+.schedule--container {
+    display: grid;
+    grid-template-columns: auto auto;
 }
 
 
@@ -84,12 +77,12 @@ input {
     grid-template-columns: auto auto auto;
 }
 
-.about--health {
-    
-}
-
 
 /*----- Footer -----*/
+
+.lrg{
+    width:25%;
+}
 
 .footer--info > .addy,
 .footer--info > .social {
@@ -100,19 +93,22 @@ input {
 
 /*----- Buttons -----*/
 
-
+.btn--menu,
+.btn--schedule {
+    margin-left: 3rem;
+}
 
 
 /*----- Images -----*/
 
 /*- Main -*/
 
-
-
 .schedule--pic,
 .cafe--pic {
     max-width: 20em;
     max-height: 20em;
+    position: relative;
+    float:right;
 }
 
 
@@ -127,6 +123,12 @@ input {
 
 /*- Sheduling -*/
 
-
+.promo--pic {
+    height: 20rem;
+    width: 25rem;
+    margin-top: 150px;
+    margin-left: 175px;
+    position: relative;
+}
 
 } /* End of media query. */
