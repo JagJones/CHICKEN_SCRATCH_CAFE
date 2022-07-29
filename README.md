@@ -16,33 +16,36 @@ The Chicken Scratch Cafe is a fictional business (though it's real in my heart) 
 
 
 ### Project Goals: ###
-. Use JS 3 ways
+* Use JS 3 ways
     - Return input to the user in an alert via a form. 
     - Validate the info.
     - Used to show and hide collapsible navigation menu.
-. Use CSS 3 Ways
+* Use CSS 3 Ways
     - Also used in the collapsible navigation menu.
     - Created a banner animation which displays the chicken's names.
     - Primarily used CSS grid for media queries. 
-. Levels of media queries.
+* Levels of media queries.
     - Mobile, 768px and 1024px.
 
 ### Function & Aesthetics Goals: ###
 **. Main Pg**
-    - Navigation menu is collapsable at all screens. 
-    *(As of 7/28 there were issues getting the navigation bar to not hide completely when setting the button display to 'none'.)*
-    - Use CSS grid to go from 1 column in the footer and main content divs on smaller screens to 2 columns for the divs and two columns at <768px then 4 columns at <1024pxfor the footer. 
+- Navigation menu is collapsable at all screens. 
+*(As of 7/28 there were issues getting the navigation bar to not hide completely when setting the button display to 'none'.)*
+- Use CSS grid to go from 1 column in the footer and main content divs on smaller screens to 2 columns for the divs and two columns at <768px then 4 columns at <1024pxfor the footer.
+
 **. About Pg**
-    - Use CSS grid to go from 1 column on small screens, then 3 columns on larger screens.
-    - Use CSS to create an animation which shows each chicken's name across their image.
-    *(As of 7/28 the banner is not in the location it was intended to be in and pops up when the cursor is anywhere near the pic instead on only when it's on the pic.)*
+- Use CSS grid to go from 1 column on small screens, then 3 columns on larger screens.
+- Use CSS to create an animation which shows each chicken's name across their image.
+*(As of 7/28 the banner is not in the location it was intended to be in and pops up when the cursor is anywhere near the pic instead on only when it's on the pic.)*
+
 **. Scheduling Pg**
-    - Use HTML to create a form which the user can fill out. 
-    - Use JavaScript to return the information that was entered to confirm that it's correct/ not null.
-    (*As of 7/25 I can only get this to work for the name field and it only confirms that the field isn't blank on the first try.)*
+- Use HTML to create a form which the user can fill out. 
+- Use JavaScript to return the information that was entered to confirm that it's correct/ not null.
+(*As of 7/25 I can only get this to work for the name field and it only confirms that the field isn't blank on the first try.)*
+
 **. Menu Pg** 
-    - It was originally created as filler since you can't have a cafe without a menu. It's just CSS practice.
-    *(As of 7/28 the menu pg is nothing fancy.)*
+- It was originally created as filler since you can't have a cafe without a menu. It's just CSS practice.
+*(As of 7/28 the menu pg is nothing fancy.)*
 
 
 ### Future Plans... ###
