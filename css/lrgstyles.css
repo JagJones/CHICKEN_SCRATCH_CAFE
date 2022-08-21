@@ -18,10 +18,16 @@
     } */
 
 /*----- Nav & Links -----*/
-/* 
-    nav > .nav-container > ul >li {
-        width: auto;
-    }
+
+button#btn--burg {
+    display: none;
+}
+
+nav > div.nav--container > ul.open{
+    display: grid;
+    grid-auto-flow: column;
+    /* grid-template-columns: 150px; */
+}
 
     nav > .nav-container > ul >li a {
         padding: .7rem 2rem;
@@ -33,8 +39,11 @@
 
     .li--contact >li {
         list-style: none;
-    } */
+    }
 
+    nav > div.nav--container > ul > li.active {
+        background-color: #D8E022;
+    }
 
 /*----- Pages -----*/
 

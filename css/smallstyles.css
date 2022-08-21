@@ -104,7 +104,6 @@ nav > div.nav--container > ul > li.active {
 nav a:hover {
     background-color:rgb(0, 0, 0, 0.2);
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
-
 }
 
 nav > div.nav--container > ul.open {
@@ -370,16 +369,16 @@ button:hover,
     position: relative;
 }
 
-/* .color--block {
+.color--block {
     background:#F3F979;
-    width:300px;
+    width:350px;
     height:250px;
     transform: skew(20deg);
     position:relative;
     top: -15px;
-    left:55px;
+    left:65px;
     margin:0;
-} */
+}
 
 /*- Chick Pics -*/
 
