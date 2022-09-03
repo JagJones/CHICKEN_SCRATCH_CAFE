@@ -58,3 +58,8 @@ There are some updates I hope to add after spending more time with this project.
 - [ ] Add CSS to have links change color after viewing a pg. *(Had this feature working previously but it was very fragile.)*
 - [ ] There's some shapes I want to add behind the images on each pg. As of 7/28 I could make the shapes and get them in the correct spot but couldn't get them behind the images. 
 - [ ] Need to resize all images. 
+
+
+### UPDATES MADE AFTER 8/20 ###
+- Fixed nav to stay open for largest media query. 
+*However, the nav can disappear. To fix this the window has to be made  smaller then open the nav using the button. 
